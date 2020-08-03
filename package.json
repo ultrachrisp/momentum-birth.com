@@ -9,7 +9,7 @@
     "general": "cp assets/general/* static",
     "fonts": "cp assets/fonts/* static/fonts",
     "svg": "cp assets/svg/* static/svg",
-    "commonReasources": "npm run general && npm run fonts && npm run svg",
+    "commonReasources": "npm run general",
     "build": "npm run clean && npm run createFolders && npm run commonReasources && hugo --minify",
     "start": "hugo server -w -D",
     "check_git_diff": "git diff --name-only --diff-filter=U"
