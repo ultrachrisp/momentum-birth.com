@@ -1,0 +1,3 @@
+#+TITLE: Source files for tiffanychi.me
+
+Tiffany decided to quit facebook, but still wanted to have a platform to share her story with family and friends. This was a great opportunity to give her her own Hugo blog
