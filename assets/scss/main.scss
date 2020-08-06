@@ -24,8 +24,8 @@ body{
     line-height: 2.7rem;
     font-family: 'Open Sans', sans-serif;
 
-    background-color: #fff;
-    background-attachment: fixed;
+    background: url('../img/background.jpeg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6{ font-weight: 300; }
@@ -148,6 +148,16 @@ img{
     padding: 100px 15px;
     
     h2{ padding: 0; }
+}
+
+.card{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+transform: translate(-50%, -50%);
 }
 
 @media only screen and (min-width: $breakpoint-medium) {
