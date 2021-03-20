@@ -45,7 +45,9 @@ print s
 #+END_SRC
 -----
 
-** Technical Skills
+** Inspiration
 
-/My previous roles & responsibilities have required me to work with many different technologies & stacks. I do not claim to be an expert in all of them, since I was usually required to get up to speed as quickly as possible to solve specific problems. However, I do have a strong understanding of the fundamental programming principles & an eye for what makes clean, scalable code which (in my opinion) is present in most technology stacks./
+https://alluredabroad.com/
+
+https://www.ben-evans.com/
 
