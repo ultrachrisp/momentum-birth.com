@@ -110,7 +110,7 @@ img{
 .post{
   grid-area: main;
 
-    padding-bottom: 30px;
+  padding-bottom: 30px;
   
   display: grid;
   grid-template-columns: 4% 1fr;
@@ -125,12 +125,10 @@ img{
 }
 
 .header, .footer{
-
   padding: 10px 0px;
   display: flex;
 
   a{
-
     padding: 5px 10px;
     margin: 0 12px 0 7px;
   }
@@ -139,44 +137,25 @@ img{
 .header{
   grid-area: header;
   justify-self: start;
-
-  .home{
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
-  }
-  .line{ margin-top: 14px; }
-  a:not(.home) { padding: 12px 10px 5px 12px; }
 }
 
 .footer{
     grid-area: footer;
     justify-self: end;
-
-    margin-bottom: 30px;
 }
 
 .page-not-found{
     text-align: center;
-    padding: 100px 15px;
-    
-    h2{ padding: 0; }
-}
-
-.card{
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 30px;
-  border-radius: 10px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-transform: translate(-50%, -50%);
+  /* padding: 100px 15px;
+     
+     h2{ padding: 0; } */
 }
 
 @media only screen and (min-width: $breakpoint-medium) {
     .grid{
         grid-template-columns: 0.5fr 8fr 0.5fr;
     }
+  
     .previous, .next{
         text-align: inherit;
         margin: 15px 0;
