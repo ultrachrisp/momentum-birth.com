@@ -136,12 +136,16 @@ img{
 
 .header{
   grid-area: header;
-  justify-self: start;
+  flex-direction: row;
+
+  a:first-child {
+      margin-right: auto;
+    }
 }
 
 .footer{
-    grid-area: footer;
-    justify-self: end;
+  grid-area: footer;
+  justify-self: end;
 }
 
 .page-not-found{
@@ -162,7 +166,8 @@ img{
         width: initial;
     }
 
-    .next{ margin-left: 15px; }
+  .next{ margin-left: 15px; }
+  
     th, td{
         &:first-child{ width: 60%; }
     }
