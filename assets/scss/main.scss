@@ -1,5 +1,6 @@
 // Screen
 @import "../../node_modules/reset-css/sass/reset";
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
 @import "colors";
 
 $ani-duration: 0.6s;
@@ -16,14 +17,15 @@ $breakpoint-wide: 1200px;
 html{ font-size: 62.5%; }
 
 body{
-    min-width: 320px;
-    max-width: $content-width-max;
-    margin: 0 auto;
+  min-width: 320px;
+  max-width: $content-width-max;
+  margin: 0 auto;
 
-    font-size: 1.8rem;
-    line-height: 2.7rem;
-    font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-family: 'Open Sans', sans-serif;
 
+  background-color: #fffdf9;
   /* background: url('../img/background.jpg') no-repeat center center fixed;
      background-size: cover; */
 }
@@ -110,6 +112,7 @@ img{
 .post{
   grid-area: main;
 
+  padding-top: 75px;
   padding-bottom: 30px;
   
   display: grid;
@@ -124,23 +127,36 @@ img{
   justify-self: center;
 }
 
+h1, nav {
+  font-family: 'Pinyon Script', cursive;
+}
+
 .header, .footer{
   padding: 10px 0px;
   display: flex;
-
+  
   a{
     padding: 5px 10px;
     margin: 0 12px 0 7px;
+    font-size: 3.0rem;
+    line-height: 3.5rem;
+    text-decoration: none;
   }
 }
 
-.header{
+nav{
   grid-area: header;
+  position: fixed;
+  width: $content-width-max;
+  background-color: #fffdf9;
+}
+
+.header{
   flex-direction: row;
 
   a:first-child {
-      margin-right: auto;
-    }
+    margin-right: auto;
+  }
 }
 
 .footer{
