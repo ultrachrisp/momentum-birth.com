@@ -1,10 +1,16 @@
 {{ partial "head.html" . }}
 {{ partial "navigation.html" . }}
-<section>
-  <div class="card">
+<section class="homepage">
     <h1>Under Construction</h1>
     <p><a href="https://tiffnychi.me">tiffanychi.me</a> is a work in progress.<br> How about sending me a mail at <a href="mailto:connect@tiffanychi.me">connect@tiffanychi.me</a>?</p>
     <p>Check back soon.</p>
-  </div>
+    <div>
+      {{ range first 10 (where .Site.Pages ".Params.type" "post") }}
+      <div class="post-link">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      </div>
+      {{ end }}
+    </div>
 </section>
 {{ partial "footer.html" . }}

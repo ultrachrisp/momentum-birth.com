@@ -47,7 +47,7 @@ print s
 
 ** Inspiration
 
-https://alluredabroad.com/
+[[https://alluredabroad.com/][Alluredabroad.com]]
 
-https://www.ben-evans.com/
+[[https://www.ben-evans.com/][BenEvans.com]]
 
