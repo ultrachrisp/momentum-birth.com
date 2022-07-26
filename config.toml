@@ -6,6 +6,6 @@ disable404 = false
 googleAnalytics = "UA-39736751-2"
 
 [params]
-  author = "Tiffany Pyke"
+  author = "Tiffany Chi"
   description = "Personal blog for Tiffany Pyke"
   font = "https://fonts.googleapis.com/css?family=Open+Sans:300,600"

@@ -1,6 +1,6 @@
 // Screen
 @import "../../node_modules/reset-css/sass/reset";
-@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import "colors";
 
 $ani-duration: 0.6s;
@@ -129,7 +129,7 @@ img{
 }
 
 h1, nav {
-  font-family: 'Pinyon Script', cursive;
+  font-family: 'Anton', sans-serif;
 }
 
 .header, .footer{
