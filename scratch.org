@@ -15,4 +15,5 @@
 * Approach
 ** Focus on font and layout
 ** Background images to break repitition
+- https://www.w3docs.com/snippets/css/how-to-change-the-background-image-on-scroll-with-css.html
 ** Squares for testimonials and blog posts
