@@ -20,5 +20,8 @@
         {{ if not .Site.IsServer }}
         {{ template "_internal/google_analytics_async.html" . }}
         {{ end }}
+
+        {{ $built := resources.Get "js/index.js" | js.Build "main.js" }}
+        <script src="{{ $built.RelPermalink }}" defer></script>
     </head>
     <body>
