@@ -1,37 +1,41 @@
-/* Screen */
-/* @import "../../node_modules/reset-css/sass/reset"; */
 @import "../../node_modules/normalize.css/normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fresca&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
-@import "colors";
 
-$ani-duration: 0.6s;
-/* $ani-delay: 0.5s;
-   $swipe-duration: 0.8s; */
+:root{
+  --black: #000;
+  --white: #fff;
+  --grey-dark: #333;
+  --grey-light: #999;
 
-$content-width-max: 1100px;
+  --canvas: #fffdf9;
+  --shadow: #ddd;
 
-$breakpoint-medium: 600px;
-$breakpoint-large: 900px;
-$breakpoint-wide: 1200px;
+  --ani-duration: 0.6s;
+  /* --ani-delay: 0.5s;
+     --swipe-duration: 0.8s; */
+  
+  --content-width-max: 1100px;
+
+  --breakpoint-medium: 600px;
+  --breakpoint-large: 900px;
+  --breakpoint-wide: 1200px;
+}
 
 /* General styles */
 html{ font-size: 62.5%; }
 
 body{
   /* min-width: 320px; */
-  /* max-width: $content-width-max; */
+  /* max-width: var(--content-width-max); */
   margin: 0 auto;
 
   font-size: 1.8rem;
   line-height: 2.7rem;
-  /* font-family: 'Fresca', sans-serif; */
   font-family: 'Dosis', sans-serif;
 
   background-color: #fffdf9;
-  /* background: url('../img/background.jpg') no-repeat center center fixed;
-     background-size: cover; */
 }
 
 h1, h2, h3, h4, h5, h6{ font-weight: 300; }
@@ -56,9 +60,9 @@ em{ font-style: italic; }
 strong{ font-weight: 600; }
 a{
   cursor: pointer;
-  color: $grey-dark;
-  transition: color $ani-duration;
-  &:hover{ color: $grey-light; }
+  color: var(--grey-dark);
+  transition: color var(--ani-duration);
+  &:hover{ color: var(--grey-light); }
 }
 
 ul, ol{
@@ -152,7 +156,7 @@ h1, nav {
 .nav{
   /* grid-area: header;
      position: fixed;
-     width: $content-width-max; */
+     width: var(--content-width-max); */
   background-color: #fffdf9;
   width: 100%;
   text-align: center;
@@ -191,7 +195,7 @@ h1, nav {
   float: right;
 }
 
-@media only screen and (min-width: $breakpoint-medium) {
+@media only screen and (min-width: var(--breakpoint-medium)) {
   .grid{
     grid-template-columns: 0.5fr 8fr 0.5fr;
   }
@@ -213,7 +217,7 @@ h1, nav {
   }
 }
 
-@media only screen and (min-width: $breakpoint-large) {
+@media only screen and (min-width: var(--breakpoint-large)) {
   .grid{
     grid-template-columns: 10px 75px auto 75px 10px;
     grid-template-areas:
@@ -243,9 +247,10 @@ h1, nav {
   }
 }
 
-@media only screen and (min-width: $breakpoint-wide) {
+@media only screen and (min-width: var(--breakpoint-wide)) {
 }
 
+/* styling for the latest iteration */
 html, body{
   height: 100%;
 }
