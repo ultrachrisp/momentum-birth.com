@@ -37,36 +37,36 @@ body{
 h1, h2, h3, h4, h5, h6{ font-weight: 300; }
 
 h1{
-    font-size: 3.4rem;
-    line-height: 3.9rem;
+  font-size: 3.4rem;
+  line-height: 3.9rem;
 }
 
 h2, h3{
-    font-size: 3.0rem;
-    line-height: 3.5rem;
+  font-size: 3.0rem;
+  line-height: 3.5rem;
 }
 
 h4, h5, h6{
-    font-size: 2.6rem;
-    line-height: 3.1rem;
+  font-size: 2.6rem;
+  line-height: 3.1rem;
 }
 
 p{ padding: 15px 0; }
 em{ font-style: italic; }
 strong{ font-weight: 600; }
 a{
-    cursor: pointer;
-    color: $grey-dark;
-    transition: color $ani-duration;
-    &:hover{ color: $grey-light; }
+  cursor: pointer;
+  color: $grey-dark;
+  transition: color $ani-duration;
+  &:hover{ color: $grey-light; }
 }
 
 ul, ol{
-    list-style-position: initial;
-    li{
-        margin-left: 20px;
-        p{ padding: 0; }
-    }
+  list-style-position: initial;
+  li{
+    margin-left: 20px;
+    p{ padding: 0; }
+  }
 }
 
 ul{
@@ -76,37 +76,37 @@ ul{
 ol{ list-style-type: decimal; }
 
 time{
-    padding-top: 5px;
-    font-size: 1.3rem;
-    line-height: 1.4rem;
+  padding-top: 5px;
+  font-size: 1.3rem;
+  line-height: 1.4rem;
 }
 
 /* Weird FF bug for tables */
 table {height: 1rem;}
 
 th, td{
-    text-align: left;
-    height:inherit;
-    &:first-child{ width: 50%; }
+  text-align: left;
+  height:inherit;
+  &:first-child{ width: 50%; }
 }
 
 
 img{
-    max-width:40vw;
+  max-width:40vw;
 
-    &.left { float:left; margin-right: 15px; }
-    &.right { float:right; margin-left: 15px; }
-    &.center { max-width:100%; margin: 0;}
-    &.corners { border-radius: 25px; }
+  &.left { float:left; margin-right: 15px; }
+  &.right { float:right; margin-left: 15px; }
+  &.center { max-width:100%; margin: 0;}
+  &.corners { border-radius: 25px; }
 }
 
 /* Custom Layout for different sections */
 .grid{
-    display: grid;
+  display: grid;
 
-    grid-template-columns: 3% 94% 3%;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:
+  grid-template-columns: 3% 94% 3%;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
     ". header ."
     ". main ."
     ". pagination ."
@@ -133,7 +133,7 @@ img{
 }
 
 h1, nav {
-    font-family: 'Euphoria Script', cursive;
+  font-family: 'Euphoria Script', cursive;
 }
 
 .header, .footer{
@@ -154,10 +154,10 @@ h1, nav {
      position: fixed;
      width: $content-width-max; */
   background-color: #fffdf9;
-      width: 100%;
-    text-align: center;
-    left: 0;
-    box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, .2);
+  width: 100%;
+  text-align: center;
+  left: 0;
+  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, .2);
 }
 
 .header{
@@ -174,7 +174,7 @@ h1, nav {
 }
 
 .page-not-found{
-    text-align: center;
+  text-align: center;
   /* padding: 100px 15px;
      
      h2{ padding: 0; } */
@@ -247,56 +247,56 @@ h1, nav {
 }
 
 html, body{
-    height: 100%;
+  height: 100%;
 }
 
 .homepage{
-    height: 100%;
-    font-family: Helvetica, sans-serif;
-    line-height: 1.5;
-    word-spacing: 2px;
-    letter-spacing: 0.5px;
+  height: 100%;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.5;
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
 }
 
 .fixed {
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100%;
-    width: 100%;
-    color: #eeeeee;
-    text-align: center;
-    display: table;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  color: #eeeeee;
+  text-align: center;
+  display: table;
 }
 .fixed h2 {
-    display: table-cell;
-    vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 .scroll {
-    background-color: #ffe0f6;
-    padding: 10px 70px;
-    color: #666666;
+  background-color: #ffe0f6;
+  padding: 10px 70px;
+  color: #666666;
 }
 .one {
-    background-image: url("/img/Beach.jpeg");
+  background-image: url("/img/Beach.jpeg");
 }
 .two {
-    background-image: url("/img/moreBeach.jpeg");
+  background-image: url("/img/moreBeach.jpeg");
 }
 .three {
-    background-image: url("/img/Iona.jpeg");
+  background-image: url("/img/Iona.jpeg");
 }
 .four {
-    background-image: url("/img/Arlo.jpeg");
+  background-image: url("/img/Arlo.jpeg");
 }
 
 .top-nav {
-    position: fixed;
-    top: 0;
+  position: fixed;
+  top: 0;
 }
 
 .bottom-nav {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 }
