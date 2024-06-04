@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-    <head>
-        <meta http-equiv="x-ua-compatible" content="IE=Edge" />
-        <meta charset="UTF-8">
-        
-        <title>{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
-        {{ hugo.Generator }}
-        <meta name="author" content="{{ .Site.Params.author }}">
-        <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="canonical" href="{{ .Permalink }}" />
-        
-        <!-- stylesheet -->
-        {{ $style := resources.Get "scss/main.scss" | toCSS | postCSS | fingerprint }}
-        <link href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" rel="stylesheet">
-        
-        <!-- javascript -->
-        {{ if not .Site.IsServer }}
-        {{ template "_internal/google_analytics_async.html" . }}
-        {{ end }}
+  <head>
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+    <meta charset="UTF-8">
+    
+    <title>{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
+    {{ hugo.Generator }}
+    <meta name="author" content="{{ .Site.Params.author }}">
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="canonical" href="{{ .Permalink }}" />
 
-        {{ $built := resources.Get "js/index.js" | js.Build "main.js" }}
-        <script src="{{ $built.RelPermalink }}" defer></script>
-    </head>
-    <body>
+    {{ $css := resources.Get "css/main.css" }}
+    {{ $css = $css | resources.PostCSS }}
+    {{ if hugo.IsProduction }}
+    {{ $css = $css | minify | fingerprint | resources.PostProcess }}
+    {{ end }}
+    <link href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" rel="stylesheet" />
+    
+    {{ $built := resources.Get "js/index.js" | js.Build "main.js" }}
+    <script src="{{ $built.RelPermalink }}" defer></script>
+
+    {{ template "_internal/google_analytics.html" . }}
+  </head>
+  <body>
