@@ -3,7 +3,7 @@ languageCode = "en"
 title = ""
 enableRobotsTXT = true
 disable404 = false
-googleAnalytics = "UA-39736751-2"
+googleAnalytics = "G-1RCB9NJFMG"
 
 [params]
   author = "Tiffany Chi"

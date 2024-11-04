@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-  <head>
+
+<head>
     <meta http-equiv="x-ua-compatible" content="IE=Edge" />
     <meta charset="UTF-8">
-    
+
     <title>{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
     {{ hugo.Generator }}
     <meta name="author" content="{{ .Site.Params.author }}">
-    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="description"
+        content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="canonical" href="{{ .Permalink }}" />
@@ -18,10 +20,11 @@
     {{ $css = $css | minify | fingerprint | resources.PostProcess }}
     {{ end }}
     <link href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" rel="stylesheet" />
-    
+
     {{ $built := resources.Get "js/index.js" | js.Build "main.js" }}
     <script src="{{ $built.RelPermalink }}" defer></script>
 
     {{ template "_internal/google_analytics.html" . }}
-  </head>
-  <body>
+</head>
+
+<body>
