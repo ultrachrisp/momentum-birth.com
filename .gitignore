@@ -4,4 +4,5 @@
 node_modules
 static
 resources
+public
 assets/js/main.bundle.js

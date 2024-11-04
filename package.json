@@ -1,19 +1,16 @@
 {
-  "name": "tiffanychi.me",
-  "version": "0.1.0",
-  "description": "Personal blog",
+  "name": "momentum-birth.com",
+  "version": "0.0.1",
+  "description": "Website for a doula business",
   "main": "public/index.html",
   "scripts": {
     "start": "hugo server -w -D",
     "build": "npm run clean && npm run createFolders && npm run commonReasources && hugo --minify",
-    "clean": "del static/** && del public/** !public !public/.git !public/.gitignore",
+    "clean": "del static/** && del public/**",
     "createFolders": "mkdir -p ./static ./static/img",
     "commonReasources": "npm run general && npm run img",
     "general": "cp assets/general/* static",
-    "fonts": "cp assets/fonts/* static/fonts",
-    "svg": "cp assets/svg/* static/svg",
-    "img": "cp assets/img/* static/img",
-    "check_git_diff": "git diff --name-only --diff-filter=U"
+    "img": "cp assets/img/* static/img"
   },
   "repository": {
     "type": "git",
