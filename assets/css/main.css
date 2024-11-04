@@ -90,7 +90,6 @@ th, td{
   &:first-child{ width: 50%; }
 }
 
-
 img{
   max-width:40vw;
 
@@ -111,7 +110,6 @@ img{
   
   + .corners { border-radius: 25px; }
 }
-
 
 /* Custom Layout for different sections */
 h1, nav {
@@ -168,6 +166,8 @@ h1, nav {
 }
 
 .header{
+  width: var(--content-width-max);
+  margin: 0 auto;
   flex-direction: row;
 
   a:first-child {
@@ -250,9 +250,6 @@ h1, nav {
     line-height: 4.2rem;
   }
 }
-
-/* @media only screen and (min-width: var(--breakpoint-wide)) {
-   } */
 
 /* styling for the latest iteration */
 html, body{

@@ -1,11 +1,13 @@
 <nav>
-  <div class="header">
-  <a href="{{ .Site.BaseURL }}">
-    Tiffany Chi
-  </a>
-  <a href="{{ .Site.BaseURL }}post">
-    Ramblings
-  </a>
-  </div>
-</nav>
+    <div class="header">
+        <a href="{{ .Site.BaseURL }}">
+            Tiffany Chi
+        </a>
 
+        {{if (not hugo.IsProduction) }}
+        <a href="{{ .Site.BaseURL }}post">
+            Ramblings
+        </a>
+        {{ end }}
+    </div>
+</nav>
