@@ -1,7 +1,4 @@
 @import url("../../node_modules/normalize.css/normalize.css");
-@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fresca&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
 
 :root{
   --black: #000;
@@ -264,7 +261,12 @@ html, body{
 
 .homepage{
   height: 100%;
-  font-family: Helvetica, sans-serif;
+  /* font-family: "Fresca", sans-serif;
+     font-weight: 400; */
+  font-family: "Dosis", serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
   line-height: 1.5;
   word-spacing: 2px;
   letter-spacing: 0.5px;

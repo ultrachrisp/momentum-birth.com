@@ -13,6 +13,12 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="canonical" href="{{ .Permalink }}" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Euphoria+Script&family=Fresca&display=swap"
+        rel="stylesheet">
+
     {{ $css := resources.Get "css/main.css" }}
     {{ $css = $css | resources.PostCSS }}
     {{ if hugo.IsProduction }}
