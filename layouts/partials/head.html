@@ -20,7 +20,7 @@
         rel="stylesheet">
 
     {{ $css := resources.Get "css/main.css" }}
-    {{ $css = $css | resources.PostCSS }}
+    {{ $css = $css | css.PostCSS }}
     {{ if hugo.IsProduction }}
     {{ $css = $css | minify | fingerprint | resources.PostProcess }}
     {{ end }}
