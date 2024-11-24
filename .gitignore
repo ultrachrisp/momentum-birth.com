@@ -1,7 +1,7 @@
 .DS_store
-.tern-port
 
 node_modules
-static
+public
 resources
+static
 assets/js/main.bundle.js
