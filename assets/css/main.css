@@ -6,9 +6,6 @@
     --canvas: #fffdf9;
     --shadow: #ddd;
     --ani-duration: 0.6s;
-
-    /* --ani-delay: 0.5s;
-     --swipe-duration: 0.8s; */
     
     --content-width-max: 1100px;
     --breakpoint-medium: 600px;
@@ -59,7 +56,6 @@ nav ul{
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    /* border: red 1px solid; */
     
     li{  
         font-size: 3.0rem;
@@ -77,8 +73,6 @@ nav ul{
     }
 }
 
-
-
 .fixed {
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -93,31 +87,31 @@ nav ul{
 
 .fixed h2 {
     display: table-cell;
+    
     vertical-align: middle;
 }
 
 .scroll {
-    background-color: #ffe0f6;
-    padding: 3rem;
+    background-color: #c7c7c7;
     color: #666;
 }
 
-.contact {
-    padding-bottom: 5rem;
-}
-
 .scroll, .contact {
+    padding: 3rem;
     > *{
         max-width: var(--content-width-max);
         margin: 2rem auto;
     }
 }
 
-.one {background-image: url("/img/tiff_1.jpg");}
-.two {background-image: url("/img/tiff_2.jpg");}
-.three {background-image: url("/img/202.JPG");}
-.four {background-image: url("/img/hennabelly1.jpg");}
-.five { background-image: url("/img/IMG_0478.JPG");}
+.contact {
+    padding-bottom: 5rem;
+}
+
+.one {background-image: url("/img/hennabelly1.jpg");}
+.two {background-image: url("/img/202.JPG");}
+.three { background-image: url("/img/IMG_0478.JPG");}
+.four {background-image: url("/img/024_edited-5.jpg");}
 
 .top-nav {
     position: fixed;
@@ -129,23 +123,23 @@ nav ul{
     bottom: 0;
 }
 
-#logo{
-    max-width:1080px;
-    position: absolute;
-    transition: width var(--ani-duration), opacity var(--ani-duration), top var(--ani-duration);
-    transform: translate(-50%, -50%);
-    
-    top: 50%;
-    left: 50%;
-    
-    width:30%;    
-    opacity:0;
+/* #logo{ */
+/*     max-width:1080px; */
+/*     position: absolute; */
+/*     transition: width var(--ani-duration), opacity var(--ani-duration), top var(--ani-duration); */
+/*     transform: translate(-50%, -50%); */
 
-    &.active{
-        width:100%;
-        opacity:1;
-    }
-}
+/*     top: 50%; */
+/*     left: 50%; */
+
+/*     width:30%; */
+/*     opacity:0; */
+
+/*     &.active{ */
+/*         width:100%; */
+/*         opacity:1; */
+/*     } */
+/* } */
 
 /* General styles */
 h1, h2, h3, h4, h5, h6{ font-weight: 300; }
