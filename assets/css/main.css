@@ -53,8 +53,8 @@ h1, h2, h3, h4, h5, h6{ font-weight: 300; }
 }
 
 nav ul{
-    width: var(--content-width-max);
-    padding: 15px 0;
+    max-width: var(--content-width-max);
+    padding: 1.5rem 1rem;
     list-style-type: none;
     margin: 0 auto;
     display: flex;
@@ -98,7 +98,7 @@ nav ul{
 
 .scroll {
     background-color: #ffe0f6;
-    padding: 1rem  0;
+    padding: 3rem;
     color: #666;
 }
 
@@ -108,30 +108,16 @@ nav ul{
 
 .scroll, .contact {
     > *{
-        width: var(--content-width-max);
+        max-width: var(--content-width-max);
         margin: 2rem auto;
     }
 }
 
-.one {
-    background-image: url("/img/tiff_1.jpg");
-}
-
-.two {
-    background-image: url("/img/tiff_2.jpg");
-}
-
-.three {
-    background-image: url("/img/tiff_3.jpeg");
-}
-
-.four {
-    background-image: url("/img/Arlo.jpeg");
-}
-
-.five {
-    background-image: url("/img/Iona_2.jpg");
-}
+.one {background-image: url("/img/tiff_1.jpg");}
+.two {background-image: url("/img/tiff_2.jpg");}
+.three {background-image: url("/img/202.JPG");}
+.four {background-image: url("/img/hennabelly1.jpg");}
+.five { background-image: url("/img/IMG_0478.JPG");}
 
 .top-nav {
     position: fixed;
@@ -143,6 +129,23 @@ nav ul{
     bottom: 0;
 }
 
+#logo{
+    max-width:1080px;
+    position: absolute;
+    transition: width var(--ani-duration), opacity var(--ani-duration), top var(--ani-duration);
+    transform: translate(-50%, -50%);
+    
+    top: 50%;
+    left: 50%;
+    
+    width:30%;    
+    opacity:0;
+
+    &.active{
+        width:100%;
+        opacity:1;
+    }
+}
 
 /* General styles */
 h1, h2, h3, h4, h5, h6{ font-weight: 300; }
