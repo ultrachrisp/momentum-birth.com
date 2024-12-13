@@ -1,0 +1,16 @@
+{
+  "baseurl": "https://momentum-birth.com",
+  "languageCode": "en",
+  "title": "Momentum birth",
+  "enableRobotsTXT": true,
+  "disable404": false,
+  "params": {
+    "author": "Tiffany Chi Pyke",
+    "description": "Website for Tiffany's doula practise"
+  },
+  "services": {
+    "googleAnalytics": {
+      "ID": "G-1RCB9NJFMG"
+    }
+  }
+}

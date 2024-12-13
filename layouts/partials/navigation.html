@@ -1,1 +1,13 @@
+<nav>
+  <ul>
+    <li>
+      <a href="{{ .Site.BaseURL }}">Momentum-Birth</a>
+    </li>
 
+    {{if (not hugo.IsProduction) }}
+    <li>
+      <a href="{{ .Site.BaseURL }}post">Ramblings</a> 
+    </li>
+    {{ end }}
+  </ul>
+</nav>

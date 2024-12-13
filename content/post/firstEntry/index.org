@@ -1,0 +1,19 @@
+#+DATE: 2021-03-20T16:42:43+02:00
+#+TITLE: First Entry
+#+DRAFT: true
+#+TYPE: post
+#+DESCRIPTION: My first entry to my own blog is coming out much later than I had intended.
+
+My first entry to my own blog is coming out much later than I had intended.
+
+{{< img name="arlo.jpg" classes="center corners" alt="Facebook spaces before it was cool" >}}
+
+Moving abroad in the year of Corona meant many frustrations amongst some failed expectations.  All in all, I can't complain.  It's still been a worthwhile adventure.  I had always mentioned to people that living in Vietnam for. a year prepared me to live in South Africa.  I also think my 9 years in South Africa paved the way to live here in The Netherlands.  I'd already dealt with not understanding some other languages, some of the cultural differences, as well as reflection on what I had taken for granted or assumed was the proper way to do things, when it's often relative.  
+
+What I can say is Amsterdam is very cosmopolitan, it is really bike-friendly and there are still surprises and places I have yet to explore and experience.  Tough times in lockdown (intelligent-shelter-in-place variety) also helped to slow things down a bit.  Moving from a two bedroom flat to a two bedroom flat to be able to find our feet here, has also made the transition easier.  Our exposure (mainly the kids in their creche and pre-school environments) to Afrikaans also helped us to pick up Dutch in speaking and understanding a little bit easier.
+
+I would love to share with you some of my perceptions as an adopted Vietnamese-American both growing up in the USA, returning to my roots for a year in Vietnam, and living nearly a decade in South Africa.  I will probably go a bit back and forth in the timeline on various topics, but am looking forward to sharing more and more frequently.  
+
+My reasons for leaving FaceBook are many, and my reasons to stay were somewhat selfish.  I hope to find my voice through this medium, in a way I wasn't ready to on the FB platform.  To reveal more of my inner thoughts, emotions and impressions and to maybe connect to some of you back in more of a real conversation.
+
+Love from afar, Tiffany
