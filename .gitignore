@@ -1,8 +1,8 @@
 .DS_store
-.tern-port
 
 node_modules
-static
+public  
 resources
-public
-assets/js/main.bundle.js
+static
+
+*Zone.Identifier

@@ -93,19 +93,31 @@ nav ul{
 
 .scroll {
     background-color: #c7c7c7;
-    color: #666;
 }
 
 .scroll, .contact {
     padding: 3rem;
+    color: #666;
     > *{
         max-width: var(--content-width-max);
         margin: 2rem auto;
     }
 }
 
-.contact {
-    padding-bottom: 5rem;
+.contact{
+    display:flex;
+    flex-direction: row;
+    gap: 1rem;
+    max-width: var(--content-width-max);
+    margin: 0 auto;
+    > *{
+        flex: 1 0;
+    }
+}
+
+#portrait {
+    float: right;
+    border-radius: 1.5rem;
 }
 
 .one {background-image: url("/img/hennabelly1.jpg");}
