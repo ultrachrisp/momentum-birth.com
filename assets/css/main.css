@@ -73,24 +73,6 @@ nav ul{
     }
 }
 
-.fixed {
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100%;
-    width: 100%;
-    color: #eee;
-    text-align: center;
-    display: table;
-}
-
-.fixed h2 {
-    display: table-cell;
-    
-    vertical-align: middle;
-}
-
 .scroll {
     background-color: #c7c7c7;
 }
@@ -120,10 +102,25 @@ nav ul{
     border-radius: 1.5rem;
 }
 
-.one {background-image: url("/img/hennabelly1.jpg");}
-.two {background-image: url("/img/202.JPG");}
-.three { background-image: url("/img/IMG_0478.JPG");}
-.four {background-image: url("/img/024_edited-5.jpg");}
+.one {background: url("/img/hennabelly1.jpg") no-repeat center center fixed;}
+.two {background: url("/img/202.JPG") no-repeat center center fixed;}
+.three {background: url("/img/IMG_0478.JPG") no-repeat center center fixed;}
+.four {background: url("/img/024_edited-5.jpg") no-repeat center center fixed;}
+
+.fixed {
+    background-size: cover;
+    -webkit-background-size: cover;
+    height: 100%;
+    width: 100%;
+    color: #eee;
+    text-align: center;
+    display: table;
+}
+
+.fixed h2 {
+    display: table-cell;    
+    vertical-align: middle;
+}
 
 .top-nav {
     position: fixed;
