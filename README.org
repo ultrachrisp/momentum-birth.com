@@ -1,3 +1,3 @@
 #+TITLE: Source files for momentum-birth.com
 
-Tiffany decided to quit facebook, but still wanted to have a platform to share her story with family and friends. This was a great opportunity to give her her own Hugo blog
+Tiffany wanted to have a platform to share her story with family and friends. This was a great opportunity to give her her own Hugo blog
