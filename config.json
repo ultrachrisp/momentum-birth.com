@@ -6,7 +6,13 @@
   "disable404": false,
   "params": {
     "author": "Tiffany Chi Pyke",
-    "description": "Website for Tiffany's doula practise"
+    "description": "Website for Tiffany's doula practise",
+    "backgroundImages": [
+      "img/one.jpg",
+      "img/two.jpg",
+      "img/three.jpg",
+      "img/four.jpg"
+    ]
   },
   "services": {
     "googleAnalytics": {

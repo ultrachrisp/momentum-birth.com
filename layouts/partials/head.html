@@ -31,17 +31,7 @@
 
     {{ if hugo.IsProduction }}
     {{ template "_internal/google_analytics.html" . }}
-    {{ end }}
-
-      <style>
-        :root{
-            {{ with resources.Get "img/hennabelly1.jpg" }}
-            --bg-img-one-s: url('{{ (.Resize "320x").RelPermalink }}');
-            --bg-img-one-m: url('{{ (.Resize "600x").RelPermalink }}');
-            --bg-img-one-l: url('{{ (.Resize "1200x").RelPermalink }}');                      --bg-img-one-w: url('{{ (.Resize "1500x").RelPermalink }}');
-            {{ end }}
-        }
-    </style>
+    {{ end }}    
 </head>
 
 <body>

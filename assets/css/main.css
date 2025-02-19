@@ -11,15 +11,6 @@
     --breakpoint-medium: 600px;
     --breakpoint-large: 900px;
     --breakpoint-wide: 1200px;
-
-    /* --bg-img-one-s: url("/img/hennabelly1.jpg"); */
-    /* --bg-img-one-m: url("/img/hennabelly1.jpg"); */
-    /* --bg-img-one-l: url("/img/hennabelly1.jpg"); */
-    /* --bg-img-one-w: url("/img/hennabelly1.jpg");  */
-    
-    --bg-img-two: url("/img/202.JPG");
-    --bg-img-three: url("/img/IMG_0478.JPG");
-    --bg-img-four: url("/img/024_edited-5.jpg");;
 }
 
 /* styling for the latest iteration */
@@ -334,32 +325,34 @@ h1 {
 }
 
 .one, .two, .three, .four {
-    background: no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .one {background-image: var(--bg-img-one-s); }
-.two {background-image: var(--bg-img-two); }
-.three {background-image: var(--bg-img-three); }
-.four {background-image: var(--bg-img-four); }
+.two {background-image: var(--bg-img-two-s); }
+.three {background-image: var(--bg-img-three-s); }
+.four {background-image: var(--bg-img-four-s); }
 
 @media only screen and (min-width: 600px) {
     .one {background-image: var(--bg-img-one-m); }
-    .two {background-image: var(--bg-img-two); }
-    .three {background-image: var(--bg-img-three); }
-    .four {background-image: var(--bg-img-four); }
+    .two {background-image: var(--bg-img-two-m); }
+    .three {background-image: var(--bg-img-three-m); }
+    .four {background-image: var(--bg-img-four-m); }
 }
 
 @media only screen and (min-width: 900px) {
     .one {background-image: var(--bg-img-one-l); }
-    .two {background-image: var(--bg-img-two); }
-    .three {background-image: var(--bg-img-three); }
-    .four {background-image: var(--bg-img-four); }
+    .two {background-image: var(--bg-img-two-l); }
+    .three {background-image: var(--bg-img-three-l); }
+    .four {background-image: var(--bg-img-four-l); }
 }
 
 @media only screen and (min-width: 1200px) {
     .one {background-image: var(--bg-img-one-w); }
-    .two {background-image: var(--bg-img-two); }
-    .three {background-image: var(--bg-img-three); }
-    .four {background-image: var(--bg-img-four); }
+    .two {background-image: var(--bg-img-two-w); }
+    .three {background-image: var(--bg-img-three-w); }
+    .four {background-image: var(--bg-img-four-w); }
 }
