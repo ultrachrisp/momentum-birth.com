@@ -7,8 +7,8 @@
       {{ $resource := resources.Get $image }}
       {{ with $resource }}
        {{ $imageName := path.BaseName $resource }}
-       --bg-img-{{ $imageName }}-s: url('{{ (.Resize "320x").RelPermalink }}');
-       --bg-img-{{ $imageName }}-m: url('{{ (.Resize "600x").RelPermalink }}');
+       --bg-img-{{ $imageName }}-s: url('{{ (.Resize "600x").RelPermalink }}');
+       --bg-img-{{ $imageName }}-m: url('{{ (.Resize "900x").RelPermalink }}');
        --bg-img-{{ $imageName }}-l: url('{{ (.Resize "1200x").RelPermalink }}');
        --bg-img-{{ $imageName }}-w: url('{{ (.Resize "1500x").RelPermalink }}');
       {{ end }}
