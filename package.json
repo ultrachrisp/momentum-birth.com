@@ -2,22 +2,18 @@
   "name": "momentum-birth.com",
   "version": "0.0.1",
   "description": "Website for a doula business",
+  "author": "Chris Pyke",
+  "license": "MIT",
   "main": "public/index.html",
   "scripts": {
     "start": "hugo server -w -D",
-    "build": "npm run clean && npm run createFolders && npm run commonReasources && hugo --minify",
-    "clean": "del static/** && del public/**",
-    "createFolders": "mkdir -p ./static ./static/img",
-    "commonReasources": "npm run general && npm run img",
-    "general": "cp assets/general/* static",
-    "img": "cp assets/img/* static/img"
+    "build": "npm run clean && hugo --minify",
+    "clean": "del public/**"
   },
   "repository": {
     "type": "git",
-    "url": "yes"
+    "url": "https://github.com/ultrachrisp/momentum-birth.com.git"
   },
-  "author": "Chris Pyke",
-  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "del-cli": "^6.0.0",

@@ -1,8 +1,7 @@
 .DS_store
-
+*Zone.Identifier
+  
 node_modules
 public  
 resources
-static
 
-*Zone.Identifier

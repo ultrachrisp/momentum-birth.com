@@ -132,7 +132,9 @@
           info@momentum-birth.com</a></p>
     </div>
     <div>
-      <img id="portrait" alt="portrait of Tiffany Pyke" src="./img/FullSizeRender.jpg" />
+      {{ with resources.Get "/img/FullSizeRender.jpg" }}
+       <img id="portrait" src="{{ .RelPermalink }}" alt="portrait of Tiffany Pyke">
+      {{ end }}
     </div>
   </div>
 
